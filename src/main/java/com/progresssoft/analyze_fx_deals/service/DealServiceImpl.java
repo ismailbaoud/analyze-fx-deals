@@ -2,11 +2,19 @@ package com.progresssoft.analyze_fx_deals.service;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+// import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.progresssoft.analyze_fx_deals.dto.ResponseDTO;
 import com.progresssoft.analyze_fx_deals.model.Deal;
+// import com.progresssoft.analyze_fx_deals.repository.DealRepository;
 
+@Service
 public class DealServiceImpl implements DealService {
+
+    // @Autowired
+    // private DealRepository dealRepository;
 
     @Override
     public void importDeals(MultipartFile file) {

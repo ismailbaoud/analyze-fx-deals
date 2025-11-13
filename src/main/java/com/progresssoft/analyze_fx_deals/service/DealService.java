@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.web.multipart.MultipartFile;
 
+import com.progresssoft.analyze_fx_deals.dto.ResponseDTO;
 import com.progresssoft.analyze_fx_deals.model.Deal;
 
 public interface DealService {
