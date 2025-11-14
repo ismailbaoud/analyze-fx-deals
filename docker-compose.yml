@@ -1,0 +1,58 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: fx-deals-postgres
+    environment:
+      POSTGRES_DB: fxdeals
+      POSTGRES_USER: fxuser
+      POSTGRES_PASSWORD: fxpass123
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
+    networks:
+      - fx-deals-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U fxuser -d fxdeals"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: fx-deals-app
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/fxdeals
+      SPRING_DATASOURCE_USERNAME: fxuser
+      SPRING_DATASOURCE_PASSWORD: fxpass123
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      SPRING_JPA_SHOW_SQL: "true"
+      SPRING_JPA_PROPERTIES_HIBERNATE_FORMAT_SQL: "true"
+      SERVER_PORT: 8080
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./samples:/app/samples
+    networks:
+      - fx-deals-network
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:8080/actuator/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+networks:
+  fx-deals-network:
+    driver: bridge
+
+volumes:
+  postgres_data:
