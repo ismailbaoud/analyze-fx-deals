@@ -12,20 +12,18 @@ import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-// import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.progresssoft.analyze_fx_deals.dto.RequestDTO;
 import com.progresssoft.analyze_fx_deals.mapper.DealMapper;
 import com.progresssoft.analyze_fx_deals.model.Deal;
-// import com.progresssoft.analyze_fx_deals.repository.DealRepository;
 import com.progresssoft.analyze_fx_deals.repository.DealRepository;
 import jakarta.validation.*;
 import lombok.extern.slf4j.Slf4j;
 
 
-@Service
 @Slf4j
+@Service
 public class DealServiceImpl implements DealService {
 
     @Autowired
