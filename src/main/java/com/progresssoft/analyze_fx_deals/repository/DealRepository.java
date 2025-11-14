@@ -7,4 +7,5 @@ import com.progresssoft.analyze_fx_deals.model.Deal;
 @Repository
 public interface DealRepository extends JpaRepository<Deal,String> {
     Deal getDealByDealUniqueId(String id);
+    Boolean existsByDealUniqueId(String id);
 }

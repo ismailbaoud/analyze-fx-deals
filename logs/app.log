@@ -382,3 +382,292 @@ org.postgresql.util.PSQLException: ERREUR: la relation « deals » n'existe pas
 2025-11-14T15:28:18.156+01:00  INFO 532325 --- [analyze-fx-deals] [http-nio-8080-exec-2] c.p.a.service.DealServiceImpl            : Created with successfully
 2025-11-14T15:28:18.161+01:00  INFO 532325 --- [analyze-fx-deals] [http-nio-8080-exec-2] c.p.a.service.DealServiceImpl            : Created with successfully
 2025-11-14T15:28:18.165+01:00  INFO 532325 --- [analyze-fx-deals] [http-nio-8080-exec-2] c.p.a.service.DealServiceImpl            : Created with successfully
+2025-11-14T15:57:21.410+01:00  INFO 549390 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : Starting AnalyzeFxDealsApplication using Java 17.0.13 with PID 549390 (/home/happy/Bureau/progressSoft/analyze-fx-deals/target/classes started by happy in /home/happy/Bureau/progressSoft/analyze-fx-deals)
+2025-11-14T15:57:21.412+01:00 DEBUG 549390 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14T15:57:21.413+01:00  INFO 549390 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-11-14T15:57:22.116+01:00  INFO 549390 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-14T15:57:22.177+01:00  INFO 549390 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interface.
+2025-11-14T15:57:22.564+01:00  INFO 549390 --- [analyze-fx-deals] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-14T15:57:22.577+01:00  INFO 549390 --- [analyze-fx-deals] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-14T15:57:22.578+01:00  INFO 549390 --- [analyze-fx-deals] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-14T15:57:22.625+01:00  INFO 549390 --- [analyze-fx-deals] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-14T15:57:22.625+01:00  INFO 549390 --- [analyze-fx-deals] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1163 ms
+2025-11-14T15:57:22.760+01:00  INFO 549390 --- [analyze-fx-deals] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-14T15:57:22.811+01:00  INFO 549390 --- [analyze-fx-deals] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-14T15:57:22.847+01:00  INFO 549390 --- [analyze-fx-deals] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-14T15:57:23.071+01:00  INFO 549390 --- [analyze-fx-deals] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-14T15:57:23.095+01:00  INFO 549390 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-14T15:57:23.403+01:00  INFO 549390 --- [analyze-fx-deals] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1c72189f
+2025-11-14T15:57:23.405+01:00  INFO 549390 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-14T15:57:23.435+01:00  WARN 549390 --- [analyze-fx-deals] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-14T15:57:23.463+01:00  INFO 549390 --- [analyze-fx-deals] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-14T15:57:24.078+01:00  INFO 549390 --- [analyze-fx-deals] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-14T15:57:24.113+01:00  INFO 549390 --- [analyze-fx-deals] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T15:57:24.358+01:00  WARN 549390 --- [analyze-fx-deals] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-14T15:57:24.633+01:00  INFO 549390 --- [analyze-fx-deals] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-11-14T15:57:24.642+01:00  INFO 549390 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : Started AnalyzeFxDealsApplication in 3.621 seconds (process running for 3.869)
+2025-11-14T15:57:51.113+01:00  INFO 549390 --- [analyze-fx-deals] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-14T15:57:51.113+01:00  INFO 549390 --- [analyze-fx-deals] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-14T15:57:51.114+01:00  INFO 549390 --- [analyze-fx-deals] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-11-14T15:57:51.302+01:00 ERROR 549390 --- [analyze-fx-deals] [http-nio-8080-exec-2] c.p.a.service.DealServiceImpl            : 
+2025-11-14T15:57:51.306+01:00 ERROR 549390 --- [analyze-fx-deals] [http-nio-8080-exec-2] c.p.a.service.DealServiceImpl            : 
+2025-11-14T15:57:51.310+01:00 ERROR 549390 --- [analyze-fx-deals] [http-nio-8080-exec-2] c.p.a.service.DealServiceImpl            : 
+2025-11-14T15:57:51.314+01:00 ERROR 549390 --- [analyze-fx-deals] [http-nio-8080-exec-2] c.p.a.service.DealServiceImpl            : Currency code must be exactly 3 letters
+2025-11-14T15:57:51.319+01:00 ERROR 549390 --- [analyze-fx-deals] [http-nio-8080-exec-2] c.p.a.service.DealServiceImpl            : 
+2025-11-14T15:57:51.324+01:00 ERROR 549390 --- [analyze-fx-deals] [http-nio-8080-exec-2] c.p.a.service.DealServiceImpl            : 
+2025-11-14T15:57:51.328+01:00 ERROR 549390 --- [analyze-fx-deals] [http-nio-8080-exec-2] c.p.a.service.DealServiceImpl            : 
+2025-11-14T15:57:51.331+01:00 ERROR 549390 --- [analyze-fx-deals] [http-nio-8080-exec-2] c.p.a.service.DealServiceImpl            : 
+2025-11-14T15:57:51.335+01:00 ERROR 549390 --- [analyze-fx-deals] [http-nio-8080-exec-2] c.p.a.service.DealServiceImpl            : 
+2025-11-14T15:57:51.339+01:00 ERROR 549390 --- [analyze-fx-deals] [http-nio-8080-exec-2] c.p.a.service.DealServiceImpl            : 
+2025-11-14T15:58:58.810+01:00  INFO 549390 --- [analyze-fx-deals] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-14T15:58:58.812+01:00  INFO 549390 --- [analyze-fx-deals] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-14T15:58:58.815+01:00  INFO 549390 --- [analyze-fx-deals] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T15:58:58.817+01:00  INFO 549390 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-14T15:58:58.833+01:00  INFO 549390 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-14T15:59:00.083+01:00  INFO 551548 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : Starting AnalyzeFxDealsApplication using Java 17.0.13 with PID 551548 (/home/happy/Bureau/progressSoft/analyze-fx-deals/target/classes started by happy in /home/happy/Bureau/progressSoft/analyze-fx-deals)
+2025-11-14T15:59:00.086+01:00 DEBUG 551548 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14T15:59:00.087+01:00  INFO 551548 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-11-14T15:59:00.833+01:00  INFO 551548 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-14T15:59:00.887+01:00  INFO 551548 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interface.
+2025-11-14T15:59:01.330+01:00  INFO 551548 --- [analyze-fx-deals] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-14T15:59:01.346+01:00  INFO 551548 --- [analyze-fx-deals] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-14T15:59:01.347+01:00  INFO 551548 --- [analyze-fx-deals] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-14T15:59:01.393+01:00  INFO 551548 --- [analyze-fx-deals] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-14T15:59:01.394+01:00  INFO 551548 --- [analyze-fx-deals] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1249 ms
+2025-11-14T15:59:01.539+01:00  INFO 551548 --- [analyze-fx-deals] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-14T15:59:01.570+01:00  INFO 551548 --- [analyze-fx-deals] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-14T15:59:01.594+01:00  INFO 551548 --- [analyze-fx-deals] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-14T15:59:01.790+01:00  INFO 551548 --- [analyze-fx-deals] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-14T15:59:01.815+01:00  INFO 551548 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-14T15:59:02.085+01:00  INFO 551548 --- [analyze-fx-deals] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5112b7
+2025-11-14T15:59:02.087+01:00  INFO 551548 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-14T15:59:02.118+01:00  WARN 551548 --- [analyze-fx-deals] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-14T15:59:02.143+01:00  INFO 551548 --- [analyze-fx-deals] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-14T15:59:02.909+01:00  INFO 551548 --- [analyze-fx-deals] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-14T15:59:02.943+01:00  INFO 551548 --- [analyze-fx-deals] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T15:59:03.206+01:00  WARN 551548 --- [analyze-fx-deals] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-14T15:59:03.462+01:00  INFO 551548 --- [analyze-fx-deals] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-11-14T15:59:03.473+01:00  INFO 551548 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : Started AnalyzeFxDealsApplication in 3.839 seconds (process running for 4.194)
+2025-11-14T15:59:24.008+01:00  INFO 551548 --- [analyze-fx-deals] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-14T15:59:24.008+01:00  INFO 551548 --- [analyze-fx-deals] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-14T15:59:24.009+01:00  INFO 551548 --- [analyze-fx-deals] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-11-14T15:59:24.219+01:00 ERROR 551548 --- [analyze-fx-deals] [http-nio-8080-exec-2] c.p.a.service.DealServiceImpl            : the deal is dupllicated
+2025-11-14T15:59:24.223+01:00 ERROR 551548 --- [analyze-fx-deals] [http-nio-8080-exec-2] c.p.a.service.DealServiceImpl            : the deal is dupllicated
+2025-11-14T15:59:24.227+01:00 ERROR 551548 --- [analyze-fx-deals] [http-nio-8080-exec-2] c.p.a.service.DealServiceImpl            : the deal is dupllicated
+2025-11-14T15:59:24.230+01:00 ERROR 551548 --- [analyze-fx-deals] [http-nio-8080-exec-2] c.p.a.service.DealServiceImpl            : Currency code must be exactly 3 letters
+2025-11-14T15:59:24.233+01:00 ERROR 551548 --- [analyze-fx-deals] [http-nio-8080-exec-2] c.p.a.service.DealServiceImpl            : the deal is dupllicated
+2025-11-14T15:59:24.237+01:00 ERROR 551548 --- [analyze-fx-deals] [http-nio-8080-exec-2] c.p.a.service.DealServiceImpl            : the deal is dupllicated
+2025-11-14T15:59:24.240+01:00 ERROR 551548 --- [analyze-fx-deals] [http-nio-8080-exec-2] c.p.a.service.DealServiceImpl            : the deal is dupllicated
+2025-11-14T15:59:24.244+01:00 ERROR 551548 --- [analyze-fx-deals] [http-nio-8080-exec-2] c.p.a.service.DealServiceImpl            : the deal is dupllicated
+2025-11-14T15:59:24.248+01:00 ERROR 551548 --- [analyze-fx-deals] [http-nio-8080-exec-2] c.p.a.service.DealServiceImpl            : the deal is dupllicated
+2025-11-14T15:59:24.251+01:00 ERROR 551548 --- [analyze-fx-deals] [http-nio-8080-exec-2] c.p.a.service.DealServiceImpl            : the deal is dupllicated
+2025-11-14T16:00:55.810+01:00  INFO 551548 --- [analyze-fx-deals] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-14T16:00:55.812+01:00  INFO 551548 --- [analyze-fx-deals] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-14T16:00:55.814+01:00  INFO 551548 --- [analyze-fx-deals] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T16:00:55.817+01:00  INFO 551548 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-14T16:00:55.829+01:00  INFO 551548 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-14T16:00:57.016+01:00  INFO 553888 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : Starting AnalyzeFxDealsApplication using Java 17.0.13 with PID 553888 (/home/happy/Bureau/progressSoft/analyze-fx-deals/target/classes started by happy in /home/happy/Bureau/progressSoft/analyze-fx-deals)
+2025-11-14T16:00:57.020+01:00 DEBUG 553888 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14T16:00:57.021+01:00  INFO 553888 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-11-14T16:00:57.712+01:00  INFO 553888 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-14T16:00:57.790+01:00  INFO 553888 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 1 JPA repository interface.
+2025-11-14T16:00:58.328+01:00  INFO 553888 --- [analyze-fx-deals] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-14T16:00:58.344+01:00  INFO 553888 --- [analyze-fx-deals] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-14T16:00:58.344+01:00  INFO 553888 --- [analyze-fx-deals] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-14T16:00:58.389+01:00  INFO 553888 --- [analyze-fx-deals] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-14T16:00:58.389+01:00  INFO 553888 --- [analyze-fx-deals] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1311 ms
+2025-11-14T16:00:58.542+01:00  INFO 553888 --- [analyze-fx-deals] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-14T16:00:58.579+01:00  INFO 553888 --- [analyze-fx-deals] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-14T16:00:58.605+01:00  INFO 553888 --- [analyze-fx-deals] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-14T16:00:58.803+01:00  INFO 553888 --- [analyze-fx-deals] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-14T16:00:58.833+01:00  INFO 553888 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-14T16:00:59.096+01:00  INFO 553888 --- [analyze-fx-deals] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@56c42964
+2025-11-14T16:00:59.097+01:00  INFO 553888 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-14T16:00:59.123+01:00  WARN 553888 --- [analyze-fx-deals] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-14T16:00:59.146+01:00  INFO 553888 --- [analyze-fx-deals] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-14T16:01:00.034+01:00  INFO 553888 --- [analyze-fx-deals] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-14T16:01:00.085+01:00  INFO 553888 --- [analyze-fx-deals] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T16:01:00.704+01:00  WARN 553888 --- [analyze-fx-deals] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-14T16:01:01.173+01:00  INFO 553888 --- [analyze-fx-deals] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-11-14T16:01:01.189+01:00  INFO 553888 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : Started AnalyzeFxDealsApplication in 4.651 seconds (process running for 4.908)
+2025-11-14T16:02:25.536+01:00  INFO 553888 --- [analyze-fx-deals] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-14T16:02:25.536+01:00  INFO 553888 --- [analyze-fx-deals] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-14T16:02:25.537+01:00  INFO 553888 --- [analyze-fx-deals] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-11-14T16:02:25.745+01:00 ERROR 553888 --- [analyze-fx-deals] [http-nio-8080-exec-1] c.p.a.service.DealServiceImpl            : deal with id D001 is already exist
+2025-11-14T16:02:25.748+01:00 ERROR 553888 --- [analyze-fx-deals] [http-nio-8080-exec-1] c.p.a.service.DealServiceImpl            : deal with id D002 is already exist
+2025-11-14T16:02:25.753+01:00 ERROR 553888 --- [analyze-fx-deals] [http-nio-8080-exec-1] c.p.a.service.DealServiceImpl            : deal with id D003 is already exist
+2025-11-14T16:02:25.758+01:00 ERROR 553888 --- [analyze-fx-deals] [http-nio-8080-exec-1] c.p.a.service.DealServiceImpl            : Currency code must be exactly 3 letters
+2025-11-14T16:02:25.762+01:00 ERROR 553888 --- [analyze-fx-deals] [http-nio-8080-exec-1] c.p.a.service.DealServiceImpl            : deal with id D005 is already exist
+2025-11-14T16:02:25.767+01:00 ERROR 553888 --- [analyze-fx-deals] [http-nio-8080-exec-1] c.p.a.service.DealServiceImpl            : deal with id D006 is already exist
+2025-11-14T16:02:25.771+01:00 ERROR 553888 --- [analyze-fx-deals] [http-nio-8080-exec-1] c.p.a.service.DealServiceImpl            : deal with id D007 is already exist
+2025-11-14T16:02:25.775+01:00 ERROR 553888 --- [analyze-fx-deals] [http-nio-8080-exec-1] c.p.a.service.DealServiceImpl            : deal with id D008 is already exist
+2025-11-14T16:02:25.779+01:00 ERROR 553888 --- [analyze-fx-deals] [http-nio-8080-exec-1] c.p.a.service.DealServiceImpl            : deal with id D009 is already exist
+2025-11-14T16:02:25.783+01:00 ERROR 553888 --- [analyze-fx-deals] [http-nio-8080-exec-1] c.p.a.service.DealServiceImpl            : deal with id D010 is already exist
+2025-11-14T16:05:16.288+01:00  INFO 553888 --- [analyze-fx-deals] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-14T16:05:16.290+01:00  INFO 553888 --- [analyze-fx-deals] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-14T16:05:16.294+01:00  INFO 553888 --- [analyze-fx-deals] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T16:05:16.297+01:00  INFO 553888 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-14T16:05:16.306+01:00  INFO 553888 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-14T16:05:17.462+01:00  INFO 559231 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : Starting AnalyzeFxDealsApplication using Java 17.0.13 with PID 559231 (/home/happy/Bureau/progressSoft/analyze-fx-deals/target/classes started by happy in /home/happy/Bureau/progressSoft/analyze-fx-deals)
+2025-11-14T16:05:17.465+01:00 DEBUG 559231 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14T16:05:17.473+01:00  INFO 559231 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-11-14T16:05:18.120+01:00  INFO 559231 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-14T16:05:18.183+01:00  INFO 559231 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interface.
+2025-11-14T16:05:18.693+01:00  INFO 559231 --- [analyze-fx-deals] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-14T16:05:18.709+01:00  INFO 559231 --- [analyze-fx-deals] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-14T16:05:18.710+01:00  INFO 559231 --- [analyze-fx-deals] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-14T16:05:18.758+01:00  INFO 559231 --- [analyze-fx-deals] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-14T16:05:18.759+01:00  INFO 559231 --- [analyze-fx-deals] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1242 ms
+2025-11-14T16:05:18.931+01:00  INFO 559231 --- [analyze-fx-deals] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-14T16:05:18.972+01:00  INFO 559231 --- [analyze-fx-deals] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-14T16:05:18.999+01:00  INFO 559231 --- [analyze-fx-deals] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-14T16:05:19.223+01:00  INFO 559231 --- [analyze-fx-deals] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-14T16:05:19.253+01:00  INFO 559231 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-14T16:05:19.532+01:00  INFO 559231 --- [analyze-fx-deals] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@c732e1c
+2025-11-14T16:05:19.534+01:00  INFO 559231 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-14T16:05:19.563+01:00  WARN 559231 --- [analyze-fx-deals] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-14T16:05:19.589+01:00  INFO 559231 --- [analyze-fx-deals] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-14T16:05:20.453+01:00  INFO 559231 --- [analyze-fx-deals] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-14T16:05:20.506+01:00  INFO 559231 --- [analyze-fx-deals] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T16:05:21.067+01:00  WARN 559231 --- [analyze-fx-deals] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-14T16:05:21.896+01:00  INFO 559231 --- [analyze-fx-deals] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-11-14T16:05:21.913+01:00  INFO 559231 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : Started AnalyzeFxDealsApplication in 4.925 seconds (process running for 5.162)
+2025-11-14T16:05:26.476+01:00  INFO 559231 --- [analyze-fx-deals] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-14T16:05:26.477+01:00  INFO 559231 --- [analyze-fx-deals] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-14T16:05:26.478+01:00  INFO 559231 --- [analyze-fx-deals] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-11-14T16:05:26.708+01:00 ERROR 559231 --- [analyze-fx-deals] [http-nio-8080-exec-2] c.p.a.service.DealServiceImpl            : Deal with id D001 is already exist
+2025-11-14T16:05:26.713+01:00 ERROR 559231 --- [analyze-fx-deals] [http-nio-8080-exec-2] c.p.a.service.DealServiceImpl            : Deal with id D002 is already exist
+2025-11-14T16:05:26.715+01:00 ERROR 559231 --- [analyze-fx-deals] [http-nio-8080-exec-2] c.p.a.service.DealServiceImpl            : Deal with id D003 is already exist
+2025-11-14T16:05:26.720+01:00 ERROR 559231 --- [analyze-fx-deals] [http-nio-8080-exec-2] c.p.a.service.DealServiceImpl            : Error in Deal with id : D004Currency code must be exactly 3 letters
+2025-11-14T16:05:26.723+01:00 ERROR 559231 --- [analyze-fx-deals] [http-nio-8080-exec-2] c.p.a.service.DealServiceImpl            : Deal with id D005 is already exist
+2025-11-14T16:05:26.727+01:00 ERROR 559231 --- [analyze-fx-deals] [http-nio-8080-exec-2] c.p.a.service.DealServiceImpl            : Deal with id D006 is already exist
+2025-11-14T16:05:26.730+01:00 ERROR 559231 --- [analyze-fx-deals] [http-nio-8080-exec-2] c.p.a.service.DealServiceImpl            : Deal with id D007 is already exist
+2025-11-14T16:05:26.734+01:00 ERROR 559231 --- [analyze-fx-deals] [http-nio-8080-exec-2] c.p.a.service.DealServiceImpl            : Deal with id D008 is already exist
+2025-11-14T16:05:26.737+01:00 ERROR 559231 --- [analyze-fx-deals] [http-nio-8080-exec-2] c.p.a.service.DealServiceImpl            : Deal with id D009 is already exist
+2025-11-14T16:05:26.742+01:00 ERROR 559231 --- [analyze-fx-deals] [http-nio-8080-exec-2] c.p.a.service.DealServiceImpl            : Deal with id D010 is already exist
+2025-11-14T16:50:36.600+01:00  INFO 559231 --- [analyze-fx-deals] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-14T16:50:36.604+01:00  INFO 559231 --- [analyze-fx-deals] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-14T16:50:36.609+01:00  INFO 559231 --- [analyze-fx-deals] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T16:50:36.612+01:00  INFO 559231 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-14T16:50:36.619+01:00  INFO 559231 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-14T17:16:26.750+01:00  INFO 592090 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : Starting AnalyzeFxDealsApplication using Java 17.0.13 with PID 592090 (/home/happy/Bureau/progressSoft/analyze-fx-deals/target/classes started by happy in /home/happy/Bureau/progressSoft/analyze-fx-deals)
+2025-11-14T17:16:26.753+01:00 DEBUG 592090 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14T17:16:26.755+01:00  INFO 592090 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-11-14T17:16:27.472+01:00  INFO 592090 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-14T17:16:27.531+01:00  INFO 592090 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interface.
+2025-11-14T17:16:27.921+01:00  INFO 592090 --- [analyze-fx-deals] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-14T17:16:27.937+01:00  INFO 592090 --- [analyze-fx-deals] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-14T17:16:27.938+01:00  INFO 592090 --- [analyze-fx-deals] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-14T17:16:27.983+01:00  INFO 592090 --- [analyze-fx-deals] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-14T17:16:27.983+01:00  INFO 592090 --- [analyze-fx-deals] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1166 ms
+2025-11-14T17:16:28.154+01:00  INFO 592090 --- [analyze-fx-deals] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-14T17:16:28.197+01:00  INFO 592090 --- [analyze-fx-deals] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-14T17:16:28.228+01:00  INFO 592090 --- [analyze-fx-deals] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-14T17:16:28.473+01:00  INFO 592090 --- [analyze-fx-deals] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-14T17:16:28.502+01:00  INFO 592090 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-14T17:16:28.755+01:00  INFO 592090 --- [analyze-fx-deals] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6f3b13d0
+2025-11-14T17:16:28.756+01:00  INFO 592090 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-14T17:16:28.783+01:00  WARN 592090 --- [analyze-fx-deals] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-14T17:16:28.806+01:00  INFO 592090 --- [analyze-fx-deals] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-14T17:16:29.414+01:00  INFO 592090 --- [analyze-fx-deals] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-14T17:16:29.451+01:00  INFO 592090 --- [analyze-fx-deals] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T17:16:29.710+01:00  WARN 592090 --- [analyze-fx-deals] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-14T17:16:30.023+01:00  INFO 592090 --- [analyze-fx-deals] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-11-14T17:16:30.034+01:00  INFO 592090 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : Started AnalyzeFxDealsApplication in 3.72 seconds (process running for 3.973)
+2025-11-14T17:16:31.377+01:00  INFO 592090 --- [analyze-fx-deals] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-14T17:16:31.378+01:00  INFO 592090 --- [analyze-fx-deals] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-14T17:16:31.379+01:00  INFO 592090 --- [analyze-fx-deals] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-11-14T17:16:31.672+01:00  INFO 592090 --- [analyze-fx-deals] [http-nio-8080-exec-1] c.p.a.service.DealServiceImpl            : Deal with id : D001 is created successfully
+2025-11-14T17:16:31.684+01:00  INFO 592090 --- [analyze-fx-deals] [http-nio-8080-exec-1] c.p.a.service.DealServiceImpl            : Deal with id : D002 is created successfully
+2025-11-14T17:16:31.694+01:00  INFO 592090 --- [analyze-fx-deals] [http-nio-8080-exec-1] c.p.a.service.DealServiceImpl            : Deal with id : D003 is created successfully
+2025-11-14T17:16:31.701+01:00  WARN 592090 --- [analyze-fx-deals] [http-nio-8080-exec-1] c.p.a.service.DealServiceImpl            : Error in Deal with id : D004 Currency code must be exactly 3 letters
+2025-11-14T17:16:31.712+01:00  INFO 592090 --- [analyze-fx-deals] [http-nio-8080-exec-1] c.p.a.service.DealServiceImpl            : Deal with id : D005 is created successfully
+2025-11-14T17:16:31.724+01:00  INFO 592090 --- [analyze-fx-deals] [http-nio-8080-exec-1] c.p.a.service.DealServiceImpl            : Deal with id : D006 is created successfully
+2025-11-14T17:16:31.736+01:00  INFO 592090 --- [analyze-fx-deals] [http-nio-8080-exec-1] c.p.a.service.DealServiceImpl            : Deal with id : D007 is created successfully
+2025-11-14T17:16:31.745+01:00  INFO 592090 --- [analyze-fx-deals] [http-nio-8080-exec-1] c.p.a.service.DealServiceImpl            : Deal with id : D008 is created successfully
+2025-11-14T17:16:31.754+01:00  INFO 592090 --- [analyze-fx-deals] [http-nio-8080-exec-1] c.p.a.service.DealServiceImpl            : Deal with id : D009 is created successfully
+2025-11-14T17:16:31.762+01:00  INFO 592090 --- [analyze-fx-deals] [http-nio-8080-exec-1] c.p.a.service.DealServiceImpl            : Deal with id : D010 is created successfully
+2025-11-14T17:20:51.144+01:00  INFO 592090 --- [analyze-fx-deals] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-14T17:20:51.152+01:00  INFO 592090 --- [analyze-fx-deals] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-14T17:20:51.159+01:00  INFO 592090 --- [analyze-fx-deals] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T17:20:51.162+01:00  INFO 592090 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-14T17:20:51.193+01:00  INFO 592090 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-14T17:20:52.375+01:00  INFO 597459 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : Starting AnalyzeFxDealsApplication using Java 17.0.13 with PID 597459 (/home/happy/Bureau/progressSoft/analyze-fx-deals/target/classes started by happy in /home/happy/Bureau/progressSoft/analyze-fx-deals)
+2025-11-14T17:20:52.379+01:00 DEBUG 597459 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14T17:20:52.381+01:00  INFO 597459 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-11-14T17:20:52.989+01:00  INFO 597459 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-14T17:20:53.045+01:00  INFO 597459 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interface.
+2025-11-14T17:20:53.482+01:00  INFO 597459 --- [analyze-fx-deals] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-14T17:20:53.492+01:00  INFO 597459 --- [analyze-fx-deals] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-14T17:20:53.493+01:00  INFO 597459 --- [analyze-fx-deals] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-14T17:20:53.534+01:00  INFO 597459 --- [analyze-fx-deals] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-14T17:20:53.534+01:00  INFO 597459 --- [analyze-fx-deals] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1095 ms
+2025-11-14T17:20:53.703+01:00  INFO 597459 --- [analyze-fx-deals] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-14T17:20:53.749+01:00  INFO 597459 --- [analyze-fx-deals] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-14T17:20:53.780+01:00  INFO 597459 --- [analyze-fx-deals] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-14T17:20:53.993+01:00  INFO 597459 --- [analyze-fx-deals] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-14T17:20:54.015+01:00  INFO 597459 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-14T17:20:54.267+01:00  INFO 597459 --- [analyze-fx-deals] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1570cad0
+2025-11-14T17:20:54.269+01:00  INFO 597459 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-14T17:20:54.302+01:00  WARN 597459 --- [analyze-fx-deals] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-14T17:20:54.330+01:00  INFO 597459 --- [analyze-fx-deals] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-14T17:20:54.917+01:00  INFO 597459 --- [analyze-fx-deals] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-14T17:20:54.955+01:00  INFO 597459 --- [analyze-fx-deals] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T17:20:55.203+01:00  WARN 597459 --- [analyze-fx-deals] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-14T17:20:55.514+01:00  INFO 597459 --- [analyze-fx-deals] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-11-14T17:20:55.526+01:00  INFO 597459 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : Started AnalyzeFxDealsApplication in 3.641 seconds (process running for 3.888)
+2025-11-14T17:20:58.857+01:00  INFO 597459 --- [analyze-fx-deals] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-14T17:20:58.857+01:00  INFO 597459 --- [analyze-fx-deals] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-14T17:20:58.858+01:00  INFO 597459 --- [analyze-fx-deals] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-11-14T17:20:59.098+01:00  INFO 597459 --- [analyze-fx-deals] [http-nio-8080-exec-1] c.p.a.service.DealServiceImpl            : Deal with id : D001 is created successfully
+2025-11-14T17:20:59.107+01:00  INFO 597459 --- [analyze-fx-deals] [http-nio-8080-exec-1] c.p.a.service.DealServiceImpl            : Deal with id : D002 is created successfully
+2025-11-14T17:20:59.116+01:00  INFO 597459 --- [analyze-fx-deals] [http-nio-8080-exec-1] c.p.a.service.DealServiceImpl            : Deal with id : D003 is created successfully
+2025-11-14T17:20:59.120+01:00  WARN 597459 --- [analyze-fx-deals] [http-nio-8080-exec-1] c.p.a.service.DealServiceImpl            : Error in Deal with id : D004 Currency code must be exactly 3 letters
+2025-11-14T17:20:59.129+01:00  INFO 597459 --- [analyze-fx-deals] [http-nio-8080-exec-1] c.p.a.service.DealServiceImpl            : Deal with id : D005 is created successfully
+2025-11-14T17:20:59.138+01:00  INFO 597459 --- [analyze-fx-deals] [http-nio-8080-exec-1] c.p.a.service.DealServiceImpl            : Deal with id : D006 is created successfully
+2025-11-14T17:20:59.145+01:00  INFO 597459 --- [analyze-fx-deals] [http-nio-8080-exec-1] c.p.a.service.DealServiceImpl            : Deal with id : D007 is created successfully
+2025-11-14T17:20:59.156+01:00  INFO 597459 --- [analyze-fx-deals] [http-nio-8080-exec-1] c.p.a.service.DealServiceImpl            : Deal with id : D008 is created successfully
+2025-11-14T17:20:59.165+01:00  INFO 597459 --- [analyze-fx-deals] [http-nio-8080-exec-1] c.p.a.service.DealServiceImpl            : Deal with id : D009 is created successfully
+2025-11-14T17:20:59.176+01:00  INFO 597459 --- [analyze-fx-deals] [http-nio-8080-exec-1] c.p.a.service.DealServiceImpl            : Deal with id : D010 is created successfully

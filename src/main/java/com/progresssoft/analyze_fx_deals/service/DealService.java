@@ -15,4 +15,6 @@ public interface DealService {
     abstract List<Deal> getAllDeals();
 
     abstract Deal getDealById(String id);
+
+
 }

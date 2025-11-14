@@ -55,7 +55,7 @@ public class DealServiceImpl implements DealService {
 
             String[] fields = line.split(",");
             if(fields.length != 5) {
-                throw new IllegalArgumentException("INvalide row format");
+                throw new IllegalArgumentException("Invalide row format");
             }
 
             RequestDTO rDto = new RequestDTO();
@@ -72,11 +72,20 @@ public class DealServiceImpl implements DealService {
                 String errorMsg = violations.stream()
                                             .map(ConstraintViolation::getMessage)
                                             .collect(Collectors.joining(", "));
-                log.error(errorMsg, rDto);
+                String msg = "Error in Deal with id : " +rDto.getDealUniqueId() + " " + errorMsg;
+                log.warn(msg, rDto);
                 continue;
             }
+
+            if (dealRepository.existsByDealUniqueId(rDto.getDealUniqueId())) {
+                String msg = "Deal with id " +  deal.getDealUniqueId() + " is already exist";
+                log.warn(msg, rDto);
+                continue;
+            }
+
             saveDeal(deal);
-            log.info("Created with successfully" , deal);
+            String msg = "Deal with id : " + deal.getDealUniqueId() + " is created successfully";
+            log.info(msg , deal);
             deals.add(deal);
         }
         return deals;
@@ -96,5 +105,5 @@ public class DealServiceImpl implements DealService {
     public Deal getDealById(String id) {
         return dealRepository.getDealByDealUniqueId(id);
     }
-    
+
 }
