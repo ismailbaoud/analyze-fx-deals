@@ -26,7 +26,7 @@ public class RequestDTO {
     @NotNull(message = "Deal timestamp cannot be null")
     private LocalDateTime dealTimestamp;
 
-    @NotBlank(message = "Deal amount cannot be null")
+    @NotNull(message = "Deal amount cannot be null")
     @DecimalMin(value = "0.01", message = "Deal amount must be greater than 0")
     private BigDecimal dealAmount;
 }

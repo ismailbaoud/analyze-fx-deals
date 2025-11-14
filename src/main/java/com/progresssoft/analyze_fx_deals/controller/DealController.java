@@ -18,21 +18,16 @@ import com.progresssoft.analyze_fx_deals.model.Deal;
 import com.progresssoft.analyze_fx_deals.service.DealService;
 
 @RestController
-@RequestMapping("/api/v1 /deals")
+@RequestMapping("/api/v1/deals")
 public class DealController {
-
-    @GetMapping("/hi")
-    public String hi() {
-        return "hi";
-    }
     
     @Autowired
     private DealService dealService;
 
     @PostMapping("/import")
-    public ResponseEntity<String> importDealsFile(@RequestParam("file") MultipartFile file) throws Exception{
-        dealService.importDeals(file);
-        return ResponseEntity.ok("create with success");
+    public ResponseEntity<List<Deal>> importDealsFile(@RequestParam("file") MultipartFile file) throws Exception{
+        List<Deal> deals = dealService.importDeals(file);
+        return ResponseEntity.ok().body(deals);
     }
 
     @GetMapping
@@ -42,7 +37,7 @@ public class DealController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Deal> getDealById(@PathVariable("id") String id) {
+    public ResponseEntity<Deal> getDealById(@PathVariable String id) {
         Deal deal = dealService.getDealById(id);
         return ResponseEntity.ok().body(deal);
     }
