@@ -671,3 +671,814 @@ org.postgresql.util.PSQLException: ERREUR: la relation « deals » n'existe pas
 2025-11-14T17:20:59.156+01:00  INFO 597459 --- [analyze-fx-deals] [http-nio-8080-exec-1] c.p.a.service.DealServiceImpl            : Deal with id : D008 is created successfully
 2025-11-14T17:20:59.165+01:00  INFO 597459 --- [analyze-fx-deals] [http-nio-8080-exec-1] c.p.a.service.DealServiceImpl            : Deal with id : D009 is created successfully
 2025-11-14T17:20:59.176+01:00  INFO 597459 --- [analyze-fx-deals] [http-nio-8080-exec-1] c.p.a.service.DealServiceImpl            : Deal with id : D010 is created successfully
+2025-11-14T21:09:27.537+01:00  INFO 646829 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Starting AnalyzeFxDealsApplicationTests using Java 17.0.13 with PID 646829 (started by happy in /home/happy/Bureau/progressSoft/analyze-fx-deals)
+2025-11-14T21:09:27.538+01:00 DEBUG 646829 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14T21:09:27.539+01:00  INFO 646829 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2025-11-14T21:09:28.226+01:00  INFO 646829 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-14T21:09:28.294+01:00  INFO 646829 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interface.
+2025-11-14T21:09:28.820+01:00  INFO 646829 --- [analyze-fx-deals] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-14T21:09:28.886+01:00  INFO 646829 --- [analyze-fx-deals] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-14T21:09:28.931+01:00  INFO 646829 --- [analyze-fx-deals] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-14T21:09:29.119+01:00  INFO 646829 --- [analyze-fx-deals] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-14T21:09:29.156+01:00  INFO 646829 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-14T21:09:29.559+01:00  INFO 646829 --- [analyze-fx-deals] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4f9980e1
+2025-11-14T21:09:29.561+01:00  INFO 646829 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-14T21:09:29.600+01:00  WARN 646829 --- [analyze-fx-deals] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-14T21:09:29.634+01:00  INFO 646829 --- [analyze-fx-deals] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-14T21:09:30.337+01:00  INFO 646829 --- [analyze-fx-deals] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-14T21:09:30.383+01:00  INFO 646829 --- [analyze-fx-deals] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T21:09:30.785+01:00  WARN 646829 --- [analyze-fx-deals] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-14T21:09:31.277+01:00  INFO 646829 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Started AnalyzeFxDealsApplicationTests in 4.119 seconds (process running for 6.61)
+2025-11-14T21:09:31.338+01:00  INFO 646829 --- [analyze-fx-deals] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T21:09:31.342+01:00  INFO 646829 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-14T21:09:31.368+01:00  INFO 646829 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-14T21:53:31.839+01:00  INFO 701605 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : Starting AnalyzeFxDealsApplication using Java 17.0.13 with PID 701605 (/home/happy/Bureau/progressSoft/analyze-fx-deals/target/classes started by happy in /home/happy/Bureau/progressSoft/analyze-fx-deals)
+2025-11-14T21:53:31.843+01:00 DEBUG 701605 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14T21:53:31.845+01:00  INFO 701605 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-11-14T21:53:32.661+01:00  INFO 701605 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-14T21:53:32.720+01:00  INFO 701605 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interface.
+2025-11-14T21:53:33.264+01:00  INFO 701605 --- [analyze-fx-deals] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-14T21:53:33.283+01:00  INFO 701605 --- [analyze-fx-deals] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-14T21:53:33.284+01:00  INFO 701605 --- [analyze-fx-deals] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-14T21:53:33.343+01:00  INFO 701605 --- [analyze-fx-deals] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-14T21:53:33.344+01:00  INFO 701605 --- [analyze-fx-deals] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1409 ms
+2025-11-14T21:53:33.514+01:00  INFO 701605 --- [analyze-fx-deals] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-14T21:53:33.558+01:00  INFO 701605 --- [analyze-fx-deals] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-14T21:53:33.593+01:00  INFO 701605 --- [analyze-fx-deals] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-14T21:53:33.853+01:00  INFO 701605 --- [analyze-fx-deals] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-14T21:53:33.891+01:00  INFO 701605 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-14T21:53:34.189+01:00  INFO 701605 --- [analyze-fx-deals] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@27afbf14
+2025-11-14T21:53:34.190+01:00  INFO 701605 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-14T21:53:34.221+01:00  WARN 701605 --- [analyze-fx-deals] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-14T21:53:34.255+01:00  INFO 701605 --- [analyze-fx-deals] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-14T21:53:35.113+01:00  INFO 701605 --- [analyze-fx-deals] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-14T21:53:35.169+01:00  INFO 701605 --- [analyze-fx-deals] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T21:53:35.183+01:00  WARN 701605 --- [analyze-fx-deals] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dealController': Unsatisfied dependency expressed through field 'dealService': No qualifying bean of type 'com.progresssoft.analyze_fx_deals.service.DealService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-11-14T21:53:35.184+01:00  INFO 701605 --- [analyze-fx-deals] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T21:53:35.188+01:00  INFO 701605 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-14T21:53:35.208+01:00  INFO 701605 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-14T21:53:35.213+01:00  INFO 701605 --- [analyze-fx-deals] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-11-14T21:53:35.235+01:00  INFO 701605 --- [analyze-fx-deals] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-11-14T21:53:35.262+01:00 ERROR 701605 --- [analyze-fx-deals] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field dealService in com.progresssoft.analyze_fx_deals.controller.DealController required a bean of type 'com.progresssoft.analyze_fx_deals.service.DealService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.progresssoft.analyze_fx_deals.service.DealService' in your configuration.
+
+2025-11-14T21:57:35.906+01:00  INFO 706341 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Starting AnalyzeFxDealsApplicationTests using Java 17.0.13 with PID 706341 (started by happy in /home/happy/Bureau/progressSoft/analyze-fx-deals)
+2025-11-14T21:57:35.908+01:00 DEBUG 706341 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14T21:57:35.910+01:00  INFO 706341 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2025-11-14T21:57:36.932+01:00  INFO 706341 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-14T21:57:37.026+01:00  INFO 706341 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 1 JPA repository interface.
+2025-11-14T21:57:37.604+01:00  INFO 706341 --- [analyze-fx-deals] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-14T21:57:37.670+01:00  INFO 706341 --- [analyze-fx-deals] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-14T21:57:37.711+01:00  INFO 706341 --- [analyze-fx-deals] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-14T21:57:37.826+01:00  INFO 706341 --- [analyze-fx-deals] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-14T21:57:37.855+01:00  INFO 706341 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-14T21:57:38.187+01:00  INFO 706341 --- [analyze-fx-deals] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5213b887
+2025-11-14T21:57:38.189+01:00  INFO 706341 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-14T21:57:38.218+01:00  WARN 706341 --- [analyze-fx-deals] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-14T21:57:38.242+01:00  INFO 706341 --- [analyze-fx-deals] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-14T21:57:38.987+01:00  INFO 706341 --- [analyze-fx-deals] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-14T21:57:39.030+01:00  INFO 706341 --- [analyze-fx-deals] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T21:57:39.522+01:00  WARN 706341 --- [analyze-fx-deals] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-14T21:57:39.940+01:00  INFO 706341 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Started AnalyzeFxDealsApplicationTests in 4.574 seconds (process running for 8.603)
+2025-11-14T21:57:40.027+01:00  INFO 706341 --- [analyze-fx-deals] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T21:57:40.032+01:00  INFO 706341 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-14T21:57:40.060+01:00  INFO 706341 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-14T21:59:50.145+01:00  INFO 709317 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Starting AnalyzeFxDealsApplicationTests using Java 17.0.13 with PID 709317 (started by happy in /home/happy/Bureau/progressSoft/analyze-fx-deals)
+2025-11-14T21:59:50.148+01:00 DEBUG 709317 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14T21:59:50.151+01:00  INFO 709317 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2025-11-14T21:59:50.825+01:00  INFO 709317 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-14T21:59:50.879+01:00  INFO 709317 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interface.
+2025-11-14T21:59:51.261+01:00  INFO 709317 --- [analyze-fx-deals] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-14T21:59:51.314+01:00  INFO 709317 --- [analyze-fx-deals] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-14T21:59:51.349+01:00  INFO 709317 --- [analyze-fx-deals] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-14T21:59:51.523+01:00  INFO 709317 --- [analyze-fx-deals] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-14T21:59:51.565+01:00  INFO 709317 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-14T21:59:52.042+01:00  INFO 709317 --- [analyze-fx-deals] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1c5cd2ea
+2025-11-14T21:59:52.045+01:00  INFO 709317 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-14T21:59:52.098+01:00  WARN 709317 --- [analyze-fx-deals] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-14T21:59:52.135+01:00  INFO 709317 --- [analyze-fx-deals] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-14T21:59:52.969+01:00  INFO 709317 --- [analyze-fx-deals] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-14T21:59:53.034+01:00  INFO 709317 --- [analyze-fx-deals] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T21:59:53.668+01:00  WARN 709317 --- [analyze-fx-deals] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-14T21:59:54.292+01:00  INFO 709317 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Started AnalyzeFxDealsApplicationTests in 4.597 seconds (process running for 7.345)
+2025-11-14T21:59:54.458+01:00  INFO 709317 --- [analyze-fx-deals] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T21:59:54.466+01:00  INFO 709317 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-14T21:59:54.507+01:00  INFO 709317 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-14T22:01:05.406+01:00  INFO 597459 --- [analyze-fx-deals] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-14T22:01:05.411+01:00  INFO 597459 --- [analyze-fx-deals] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-14T22:01:05.417+01:00  INFO 597459 --- [analyze-fx-deals] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T22:01:05.421+01:00  INFO 597459 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-14T22:01:05.432+01:00  INFO 597459 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-14T22:08:31.558+01:00  INFO 719457 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Starting AnalyzeFxDealsApplicationTests using Java 17.0.13 with PID 719457 (started by happy in /home/happy/Bureau/progressSoft/analyze-fx-deals)
+2025-11-14T22:08:31.560+01:00 DEBUG 719457 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14T22:08:31.562+01:00  INFO 719457 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2025-11-14T22:08:33.137+01:00  INFO 719457 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-14T22:08:33.239+01:00  INFO 719457 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88 ms. Found 1 JPA repository interface.
+2025-11-14T22:08:33.880+01:00  INFO 719457 --- [analyze-fx-deals] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-14T22:08:33.992+01:00  INFO 719457 --- [analyze-fx-deals] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-14T22:08:34.063+01:00  INFO 719457 --- [analyze-fx-deals] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-14T22:08:34.308+01:00  INFO 719457 --- [analyze-fx-deals] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-14T22:08:34.348+01:00  INFO 719457 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-14T22:08:34.803+01:00  INFO 719457 --- [analyze-fx-deals] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@58a7ca42
+2025-11-14T22:08:34.805+01:00  INFO 719457 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-14T22:08:34.841+01:00  WARN 719457 --- [analyze-fx-deals] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-14T22:08:34.875+01:00  INFO 719457 --- [analyze-fx-deals] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-14T22:08:35.944+01:00  INFO 719457 --- [analyze-fx-deals] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-14T22:08:36.020+01:00  INFO 719457 --- [analyze-fx-deals] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T22:08:36.481+01:00  WARN 719457 --- [analyze-fx-deals] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-14T22:08:36.803+01:00  INFO 719457 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Started AnalyzeFxDealsApplicationTests in 6.105 seconds (process running for 8.99)
+2025-11-14T22:08:36.865+01:00  INFO 719457 --- [analyze-fx-deals] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T22:08:36.869+01:00  INFO 719457 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-14T22:08:36.887+01:00  INFO 719457 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-14T22:12:36.385+01:00  INFO 724816 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : Starting AnalyzeFxDealsApplication using Java 17.0.13 with PID 724816 (/home/happy/Bureau/progressSoft/analyze-fx-deals/target/classes started by happy in /home/happy/Bureau/progressSoft/analyze-fx-deals)
+2025-11-14T22:12:36.388+01:00 DEBUG 724816 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14T22:12:36.390+01:00  INFO 724816 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-11-14T22:12:37.230+01:00  INFO 724816 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-14T22:12:37.294+01:00  INFO 724816 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interface.
+2025-11-14T22:12:37.807+01:00  INFO 724816 --- [analyze-fx-deals] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-14T22:12:37.826+01:00  INFO 724816 --- [analyze-fx-deals] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-14T22:12:37.826+01:00  INFO 724816 --- [analyze-fx-deals] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-14T22:12:37.889+01:00  INFO 724816 --- [analyze-fx-deals] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-14T22:12:37.889+01:00  INFO 724816 --- [analyze-fx-deals] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1405 ms
+2025-11-14T22:12:38.082+01:00  INFO 724816 --- [analyze-fx-deals] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-14T22:12:38.126+01:00  INFO 724816 --- [analyze-fx-deals] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-14T22:12:38.157+01:00  INFO 724816 --- [analyze-fx-deals] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-14T22:12:38.411+01:00  INFO 724816 --- [analyze-fx-deals] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-14T22:12:38.446+01:00  INFO 724816 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-14T22:12:38.829+01:00  INFO 724816 --- [analyze-fx-deals] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@15e08615
+2025-11-14T22:12:38.831+01:00  INFO 724816 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-14T22:12:38.872+01:00  WARN 724816 --- [analyze-fx-deals] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-14T22:12:38.906+01:00  INFO 724816 --- [analyze-fx-deals] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-14T22:12:39.762+01:00  INFO 724816 --- [analyze-fx-deals] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-14T22:12:39.821+01:00  INFO 724816 --- [analyze-fx-deals] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T22:12:39.838+01:00  WARN 724816 --- [analyze-fx-deals] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dealController': Unsatisfied dependency expressed through field 'dealService': No qualifying bean of type 'com.progresssoft.analyze_fx_deals.service.DealService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-11-14T22:12:39.838+01:00  INFO 724816 --- [analyze-fx-deals] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T22:12:39.842+01:00  INFO 724816 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-14T22:12:39.858+01:00  INFO 724816 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-14T22:12:39.862+01:00  INFO 724816 --- [analyze-fx-deals] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-11-14T22:12:39.881+01:00  INFO 724816 --- [analyze-fx-deals] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-11-14T22:12:39.913+01:00 ERROR 724816 --- [analyze-fx-deals] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field dealService in com.progresssoft.analyze_fx_deals.controller.DealController required a bean of type 'com.progresssoft.analyze_fx_deals.service.DealService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.progresssoft.analyze_fx_deals.service.DealService' in your configuration.
+
+2025-11-14T22:18:03.002+01:00  INFO 732243 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : Starting AnalyzeFxDealsApplication using Java 17.0.13 with PID 732243 (/home/happy/Bureau/progressSoft/analyze-fx-deals/target/classes started by happy in /home/happy/Bureau/progressSoft/analyze-fx-deals)
+2025-11-14T22:18:03.021+01:00 DEBUG 732243 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14T22:18:03.022+01:00  INFO 732243 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-11-14T22:18:04.893+01:00  INFO 732243 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-14T22:18:05.144+01:00  INFO 732243 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 205 ms. Found 1 JPA repository interface.
+2025-11-14T22:18:05.892+01:00  INFO 732243 --- [analyze-fx-deals] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-14T22:18:05.917+01:00  INFO 732243 --- [analyze-fx-deals] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-14T22:18:05.918+01:00  INFO 732243 --- [analyze-fx-deals] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-14T22:18:05.994+01:00  INFO 732243 --- [analyze-fx-deals] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-14T22:18:05.995+01:00  INFO 732243 --- [analyze-fx-deals] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2770 ms
+2025-11-14T22:18:06.284+01:00  INFO 732243 --- [analyze-fx-deals] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-14T22:18:06.361+01:00  INFO 732243 --- [analyze-fx-deals] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-14T22:18:06.415+01:00  INFO 732243 --- [analyze-fx-deals] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-14T22:18:06.835+01:00  INFO 732243 --- [analyze-fx-deals] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-14T22:18:06.872+01:00  INFO 732243 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-14T22:18:07.318+01:00  INFO 732243 --- [analyze-fx-deals] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@76af51d6
+2025-11-14T22:18:07.320+01:00  INFO 732243 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-14T22:18:07.360+01:00  WARN 732243 --- [analyze-fx-deals] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-14T22:18:07.401+01:00  INFO 732243 --- [analyze-fx-deals] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-14T22:18:08.495+01:00  INFO 732243 --- [analyze-fx-deals] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-14T22:18:08.551+01:00  INFO 732243 --- [analyze-fx-deals] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T22:18:08.569+01:00  WARN 732243 --- [analyze-fx-deals] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dealController': Unsatisfied dependency expressed through field 'dealService': No qualifying bean of type 'com.progresssoft.analyze_fx_deals.service.DealService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-11-14T22:18:08.570+01:00  INFO 732243 --- [analyze-fx-deals] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T22:18:08.575+01:00  INFO 732243 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-14T22:18:08.596+01:00  INFO 732243 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-14T22:18:08.600+01:00  INFO 732243 --- [analyze-fx-deals] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-11-14T22:18:08.626+01:00  INFO 732243 --- [analyze-fx-deals] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-11-14T22:18:08.677+01:00 ERROR 732243 --- [analyze-fx-deals] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field dealService in com.progresssoft.analyze_fx_deals.controller.DealController required a bean of type 'com.progresssoft.analyze_fx_deals.service.DealService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.progresssoft.analyze_fx_deals.service.DealService' in your configuration.
+
+2025-11-14T22:19:02.213+01:00  INFO 733955 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : Starting AnalyzeFxDealsApplication using Java 17.0.13 with PID 733955 (/home/happy/Bureau/progressSoft/analyze-fx-deals/target/classes started by happy in /home/happy/Bureau/progressSoft/analyze-fx-deals)
+2025-11-14T22:19:02.216+01:00 DEBUG 733955 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14T22:19:02.217+01:00  INFO 733955 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-11-14T22:19:03.455+01:00  INFO 733955 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-14T22:19:03.581+01:00  INFO 733955 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 105 ms. Found 1 JPA repository interface.
+2025-11-14T22:19:04.360+01:00  INFO 733955 --- [analyze-fx-deals] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-14T22:19:04.376+01:00  INFO 733955 --- [analyze-fx-deals] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-14T22:19:04.376+01:00  INFO 733955 --- [analyze-fx-deals] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-14T22:19:04.447+01:00  INFO 733955 --- [analyze-fx-deals] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-14T22:19:04.448+01:00  INFO 733955 --- [analyze-fx-deals] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2104 ms
+2025-11-14T22:19:04.781+01:00  INFO 733955 --- [analyze-fx-deals] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-14T22:19:04.853+01:00  INFO 733955 --- [analyze-fx-deals] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-14T22:19:04.900+01:00  INFO 733955 --- [analyze-fx-deals] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-14T22:19:05.389+01:00  INFO 733955 --- [analyze-fx-deals] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-14T22:19:05.432+01:00  INFO 733955 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-14T22:19:05.911+01:00  INFO 733955 --- [analyze-fx-deals] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6e5f5478
+2025-11-14T22:19:05.913+01:00  INFO 733955 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-14T22:19:05.961+01:00  WARN 733955 --- [analyze-fx-deals] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-14T22:19:05.994+01:00  INFO 733955 --- [analyze-fx-deals] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-14T22:19:07.021+01:00  INFO 733955 --- [analyze-fx-deals] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-14T22:19:07.087+01:00  INFO 733955 --- [analyze-fx-deals] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T22:19:07.626+01:00  WARN 733955 --- [analyze-fx-deals] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-14T22:19:08.185+01:00  INFO 733955 --- [analyze-fx-deals] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-11-14T22:19:08.202+01:00  INFO 733955 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : Started AnalyzeFxDealsApplication in 6.753 seconds (process running for 7.303)
+2025-11-14T22:19:38.169+01:00  INFO 733955 --- [analyze-fx-deals] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-14T22:19:38.174+01:00  INFO 733955 --- [analyze-fx-deals] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-14T22:19:38.178+01:00  INFO 733955 --- [analyze-fx-deals] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T22:19:38.180+01:00  INFO 733955 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-14T22:19:38.205+01:00  INFO 733955 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-14T22:20:11.504+01:00  INFO 736516 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : Starting AnalyzeFxDealsApplication using Java 17.0.13 with PID 736516 (/home/happy/Bureau/progressSoft/analyze-fx-deals/target/classes started by happy in /home/happy/Bureau/progressSoft/analyze-fx-deals)
+2025-11-14T22:20:11.539+01:00 DEBUG 736516 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14T22:20:11.542+01:00  INFO 736516 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-11-14T22:20:13.451+01:00  INFO 736516 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-14T22:20:13.493+01:00  INFO 736516 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 0 JPA repository interfaces.
+2025-11-14T22:20:14.630+01:00  INFO 736516 --- [analyze-fx-deals] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-14T22:20:14.653+01:00  INFO 736516 --- [analyze-fx-deals] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-14T22:20:14.654+01:00  INFO 736516 --- [analyze-fx-deals] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-14T22:20:14.785+01:00  INFO 736516 --- [analyze-fx-deals] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-14T22:20:14.795+01:00  INFO 736516 --- [analyze-fx-deals] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3144 ms
+2025-11-14T22:20:15.678+01:00  INFO 736516 --- [analyze-fx-deals] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-14T22:20:15.794+01:00  INFO 736516 --- [analyze-fx-deals] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-14T22:20:15.856+01:00  INFO 736516 --- [analyze-fx-deals] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-14T22:20:16.397+01:00  INFO 736516 --- [analyze-fx-deals] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-14T22:20:16.446+01:00  INFO 736516 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-14T22:20:17.010+01:00  INFO 736516 --- [analyze-fx-deals] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@656ec00d
+2025-11-14T22:20:17.018+01:00  INFO 736516 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-14T22:20:17.113+01:00  WARN 736516 --- [analyze-fx-deals] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-14T22:20:17.171+01:00  INFO 736516 --- [analyze-fx-deals] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-14T22:20:18.741+01:00  INFO 736516 --- [analyze-fx-deals] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-14T22:20:18.801+01:00  INFO 736516 --- [analyze-fx-deals] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T22:20:18.814+01:00  WARN 736516 --- [analyze-fx-deals] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dealController': Unsatisfied dependency expressed through field 'dealService': No qualifying bean of type 'com.progresssoft.analyze_fx_deals.service.DealService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-11-14T22:20:18.815+01:00  INFO 736516 --- [analyze-fx-deals] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T22:20:18.819+01:00  INFO 736516 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-14T22:20:18.842+01:00  INFO 736516 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-14T22:20:18.846+01:00  INFO 736516 --- [analyze-fx-deals] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-11-14T22:20:18.873+01:00  INFO 736516 --- [analyze-fx-deals] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-11-14T22:20:18.899+01:00 ERROR 736516 --- [analyze-fx-deals] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field dealService in com.progresssoft.analyze_fx_deals.controller.DealController required a bean of type 'com.progresssoft.analyze_fx_deals.service.DealService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.progresssoft.analyze_fx_deals.service.DealService' in your configuration.
+
+2025-11-14T22:21:56.084+01:00  INFO 739527 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : Starting AnalyzeFxDealsApplication using Java 17.0.13 with PID 739527 (/home/happy/Bureau/progressSoft/analyze-fx-deals/target/classes started by happy in /home/happy/Bureau/progressSoft/analyze-fx-deals)
+2025-11-14T22:21:56.088+01:00 DEBUG 739527 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14T22:21:56.089+01:00  INFO 739527 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-11-14T22:21:57.133+01:00  INFO 739527 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-14T22:21:57.189+01:00  INFO 739527 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 0 JPA repository interfaces.
+2025-11-14T22:21:57.982+01:00  INFO 739527 --- [analyze-fx-deals] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-14T22:21:58.009+01:00  INFO 739527 --- [analyze-fx-deals] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-14T22:21:58.010+01:00  INFO 739527 --- [analyze-fx-deals] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-14T22:21:58.097+01:00  INFO 739527 --- [analyze-fx-deals] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-14T22:21:58.098+01:00  INFO 739527 --- [analyze-fx-deals] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1853 ms
+2025-11-14T22:21:58.332+01:00  INFO 739527 --- [analyze-fx-deals] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-14T22:21:58.390+01:00  INFO 739527 --- [analyze-fx-deals] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-14T22:21:58.433+01:00  INFO 739527 --- [analyze-fx-deals] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-14T22:21:58.828+01:00  INFO 739527 --- [analyze-fx-deals] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-14T22:21:58.870+01:00  INFO 739527 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-14T22:21:59.255+01:00  INFO 739527 --- [analyze-fx-deals] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7f8c48f3
+2025-11-14T22:21:59.258+01:00  INFO 739527 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-14T22:21:59.321+01:00  WARN 739527 --- [analyze-fx-deals] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-14T22:21:59.357+01:00  INFO 739527 --- [analyze-fx-deals] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-14T22:22:00.258+01:00  INFO 739527 --- [analyze-fx-deals] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-14T22:22:00.323+01:00  INFO 739527 --- [analyze-fx-deals] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T22:22:00.339+01:00  WARN 739527 --- [analyze-fx-deals] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dealController': Unsatisfied dependency expressed through field 'dealService': No qualifying bean of type 'com.progresssoft.analyze_fx_deals.service.DealService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-11-14T22:22:00.339+01:00  INFO 739527 --- [analyze-fx-deals] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T22:22:00.343+01:00  INFO 739527 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-14T22:22:00.378+01:00  INFO 739527 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-14T22:22:00.384+01:00  INFO 739527 --- [analyze-fx-deals] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-11-14T22:22:00.403+01:00  INFO 739527 --- [analyze-fx-deals] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-11-14T22:22:00.429+01:00 ERROR 739527 --- [analyze-fx-deals] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field dealService in com.progresssoft.analyze_fx_deals.controller.DealController required a bean of type 'com.progresssoft.analyze_fx_deals.service.DealService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.progresssoft.analyze_fx_deals.service.DealService' in your configuration.
+
+2025-11-14T22:30:55.836+01:00  INFO 752333 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : Starting AnalyzeFxDealsApplication using Java 17.0.13 with PID 752333 (/home/happy/Bureau/progressSoft/analyze-fx-deals/target/classes started by happy in /home/happy/Bureau/progressSoft/analyze-fx-deals)
+2025-11-14T22:30:55.839+01:00 DEBUG 752333 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14T22:30:55.841+01:00  INFO 752333 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-11-14T22:30:56.585+01:00  INFO 752333 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-14T22:30:56.645+01:00  INFO 752333 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interface.
+2025-11-14T22:30:57.231+01:00  INFO 752333 --- [analyze-fx-deals] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-14T22:30:57.246+01:00  INFO 752333 --- [analyze-fx-deals] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-14T22:30:57.247+01:00  INFO 752333 --- [analyze-fx-deals] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-14T22:30:57.298+01:00  INFO 752333 --- [analyze-fx-deals] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-14T22:30:57.299+01:00  INFO 752333 --- [analyze-fx-deals] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1388 ms
+2025-11-14T22:30:57.460+01:00  INFO 752333 --- [analyze-fx-deals] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-14T22:30:57.504+01:00  INFO 752333 --- [analyze-fx-deals] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-14T22:30:57.535+01:00  INFO 752333 --- [analyze-fx-deals] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-14T22:30:57.768+01:00  INFO 752333 --- [analyze-fx-deals] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-14T22:30:57.792+01:00  INFO 752333 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-14T22:30:58.088+01:00  INFO 752333 --- [analyze-fx-deals] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@bd4ee01
+2025-11-14T22:30:58.090+01:00  INFO 752333 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-14T22:30:58.120+01:00  WARN 752333 --- [analyze-fx-deals] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-14T22:30:58.148+01:00  INFO 752333 --- [analyze-fx-deals] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-14T22:30:58.816+01:00  INFO 752333 --- [analyze-fx-deals] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-14T22:30:58.865+01:00  INFO 752333 --- [analyze-fx-deals] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T22:30:58.879+01:00  WARN 752333 --- [analyze-fx-deals] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dealController': Unsatisfied dependency expressed through field 'dealService': No qualifying bean of type 'com.progresssoft.analyze_fx_deals.service.DealService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-11-14T22:30:58.880+01:00  INFO 752333 --- [analyze-fx-deals] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T22:30:58.884+01:00  INFO 752333 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-14T22:30:58.898+01:00  INFO 752333 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-14T22:30:58.901+01:00  INFO 752333 --- [analyze-fx-deals] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-11-14T22:30:58.920+01:00  INFO 752333 --- [analyze-fx-deals] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-11-14T22:30:58.945+01:00 ERROR 752333 --- [analyze-fx-deals] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field dealService in com.progresssoft.analyze_fx_deals.controller.DealController required a bean of type 'com.progresssoft.analyze_fx_deals.service.DealService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.progresssoft.analyze_fx_deals.service.DealService' in your configuration.
+
+2025-11-14T22:32:33.759+01:00  INFO 754664 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : Starting AnalyzeFxDealsApplication using Java 17.0.13 with PID 754664 (/home/happy/Bureau/progressSoft/analyze-fx-deals/target/classes started by happy in /home/happy/Bureau/progressSoft/analyze-fx-deals)
+2025-11-14T22:32:33.762+01:00 DEBUG 754664 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14T22:32:33.763+01:00  INFO 754664 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-11-14T22:32:34.459+01:00  INFO 754664 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-14T22:32:34.522+01:00  INFO 754664 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interface.
+2025-11-14T22:32:35.001+01:00  INFO 754664 --- [analyze-fx-deals] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-14T22:32:35.015+01:00  INFO 754664 --- [analyze-fx-deals] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-14T22:32:35.016+01:00  INFO 754664 --- [analyze-fx-deals] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-14T22:32:35.068+01:00  INFO 754664 --- [analyze-fx-deals] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-14T22:32:35.069+01:00  INFO 754664 --- [analyze-fx-deals] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1235 ms
+2025-11-14T22:32:35.222+01:00  INFO 754664 --- [analyze-fx-deals] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-14T22:32:35.258+01:00  INFO 754664 --- [analyze-fx-deals] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-14T22:32:35.289+01:00  INFO 754664 --- [analyze-fx-deals] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-14T22:32:35.573+01:00  INFO 754664 --- [analyze-fx-deals] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-14T22:32:35.607+01:00  INFO 754664 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-14T22:32:35.928+01:00  INFO 754664 --- [analyze-fx-deals] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7845b21a
+2025-11-14T22:32:35.929+01:00  INFO 754664 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-14T22:32:35.965+01:00  WARN 754664 --- [analyze-fx-deals] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-14T22:32:35.997+01:00  INFO 754664 --- [analyze-fx-deals] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-14T22:32:36.672+01:00  INFO 754664 --- [analyze-fx-deals] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-14T22:32:36.716+01:00  INFO 754664 --- [analyze-fx-deals] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T22:32:36.727+01:00  WARN 754664 --- [analyze-fx-deals] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dealController': Unsatisfied dependency expressed through field 'dealService': No qualifying bean of type 'com.progresssoft.analyze_fx_deals.service.DealService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-11-14T22:32:36.727+01:00  INFO 754664 --- [analyze-fx-deals] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T22:32:36.730+01:00  INFO 754664 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-14T22:32:36.739+01:00  INFO 754664 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-14T22:32:36.741+01:00  INFO 754664 --- [analyze-fx-deals] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-11-14T22:32:36.757+01:00  INFO 754664 --- [analyze-fx-deals] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-11-14T22:32:36.781+01:00 ERROR 754664 --- [analyze-fx-deals] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field dealService in com.progresssoft.analyze_fx_deals.controller.DealController required a bean of type 'com.progresssoft.analyze_fx_deals.service.DealService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.progresssoft.analyze_fx_deals.service.DealService' in your configuration.
+
+2025-11-14T23:06:51.903+01:00  INFO 795352 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Starting AnalyzeFxDealsApplicationTests using Java 17.0.13 with PID 795352 (started by happy in /home/happy/Bureau/progressSoft/analyze-fx-deals)
+2025-11-14T23:06:51.906+01:00 DEBUG 795352 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14T23:06:51.908+01:00  INFO 795352 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2025-11-14T23:06:52.770+01:00  INFO 795352 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-14T23:06:52.848+01:00  INFO 795352 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 1 JPA repository interface.
+2025-11-14T23:06:53.325+01:00  INFO 795352 --- [analyze-fx-deals] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-14T23:06:53.405+01:00  INFO 795352 --- [analyze-fx-deals] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-14T23:06:53.451+01:00  INFO 795352 --- [analyze-fx-deals] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-14T23:06:53.839+01:00  INFO 795352 --- [analyze-fx-deals] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-14T23:06:53.889+01:00  INFO 795352 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-14T23:06:54.271+01:00  INFO 795352 --- [analyze-fx-deals] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1ee47336
+2025-11-14T23:06:54.273+01:00  INFO 795352 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-14T23:06:54.333+01:00  WARN 795352 --- [analyze-fx-deals] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-14T23:06:54.364+01:00  INFO 795352 --- [analyze-fx-deals] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-14T23:06:55.579+01:00  INFO 795352 --- [analyze-fx-deals] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-14T23:06:55.661+01:00  INFO 795352 --- [analyze-fx-deals] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T23:06:56.316+01:00  WARN 795352 --- [analyze-fx-deals] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-14T23:06:56.791+01:00  INFO 795352 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Started AnalyzeFxDealsApplicationTests in 5.294 seconds (process running for 7.375)
+2025-11-14T23:06:57.198+01:00  INFO 795352 --- [analyze-fx-deals] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T23:06:57.201+01:00  INFO 795352 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-14T23:06:57.237+01:00  INFO 795352 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-14T23:07:20.722+01:00  INFO 795993 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Starting AnalyzeFxDealsApplicationTests using Java 17.0.13 with PID 795993 (started by happy in /home/happy/Bureau/progressSoft/analyze-fx-deals)
+2025-11-14T23:07:20.726+01:00 DEBUG 795993 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14T23:07:20.729+01:00  INFO 795993 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2025-11-14T23:07:22.230+01:00  INFO 795993 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-14T23:07:22.357+01:00  INFO 795993 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 111 ms. Found 1 JPA repository interface.
+2025-11-14T23:07:23.076+01:00  INFO 795993 --- [analyze-fx-deals] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-14T23:07:23.149+01:00  INFO 795993 --- [analyze-fx-deals] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-14T23:07:23.202+01:00  INFO 795993 --- [analyze-fx-deals] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-14T23:07:23.657+01:00  INFO 795993 --- [analyze-fx-deals] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-14T23:07:23.707+01:00  INFO 795993 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-14T23:07:24.134+01:00  INFO 795993 --- [analyze-fx-deals] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@c512269
+2025-11-14T23:07:24.136+01:00  INFO 795993 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-14T23:07:24.185+01:00  WARN 795993 --- [analyze-fx-deals] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-14T23:07:24.218+01:00  INFO 795993 --- [analyze-fx-deals] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-14T23:07:25.403+01:00  INFO 795993 --- [analyze-fx-deals] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-14T23:07:25.472+01:00  INFO 795993 --- [analyze-fx-deals] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T23:07:25.947+01:00  WARN 795993 --- [analyze-fx-deals] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-14T23:07:26.451+01:00  INFO 795993 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Started AnalyzeFxDealsApplicationTests in 6.485 seconds (process running for 9.621)
+2025-11-14T23:07:26.874+01:00  INFO 795993 --- [analyze-fx-deals] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T23:07:26.877+01:00  INFO 795993 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-14T23:07:26.950+01:00  INFO 795993 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-14T23:09:46.271+01:00  INFO 800146 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Starting AnalyzeFxDealsApplicationTests using Java 17.0.13 with PID 800146 (started by happy in /home/happy/Bureau/progressSoft/analyze-fx-deals)
+2025-11-14T23:09:46.272+01:00 DEBUG 800146 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14T23:09:46.273+01:00  INFO 800146 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2025-11-14T23:09:46.854+01:00  INFO 800146 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-14T23:09:46.904+01:00  INFO 800146 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interface.
+2025-11-14T23:09:47.292+01:00  INFO 800146 --- [analyze-fx-deals] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-14T23:09:47.328+01:00  INFO 800146 --- [analyze-fx-deals] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-14T23:09:47.351+01:00  INFO 800146 --- [analyze-fx-deals] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-14T23:09:47.552+01:00  INFO 800146 --- [analyze-fx-deals] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-14T23:09:47.574+01:00  INFO 800146 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-14T23:09:47.836+01:00  INFO 800146 --- [analyze-fx-deals] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5d2e6f62
+2025-11-14T23:09:47.837+01:00  INFO 800146 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-14T23:09:47.866+01:00  WARN 800146 --- [analyze-fx-deals] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-14T23:09:47.885+01:00  INFO 800146 --- [analyze-fx-deals] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-14T23:09:48.538+01:00  INFO 800146 --- [analyze-fx-deals] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-14T23:09:48.586+01:00  INFO 800146 --- [analyze-fx-deals] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T23:09:48.940+01:00  WARN 800146 --- [analyze-fx-deals] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-14T23:09:49.247+01:00  INFO 800146 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Started AnalyzeFxDealsApplicationTests in 3.275 seconds (process running for 4.14)
+2025-11-14T23:09:49.613+01:00  INFO 800146 --- [analyze-fx-deals] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T23:09:49.616+01:00  INFO 800146 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-14T23:09:49.634+01:00  INFO 800146 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-14T23:10:55.574+01:00  INFO 801680 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Starting AnalyzeFxDealsApplicationTests using Java 17.0.13 with PID 801680 (started by happy in /home/happy/Bureau/progressSoft/analyze-fx-deals)
+2025-11-14T23:10:55.577+01:00 DEBUG 801680 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14T23:10:55.578+01:00  INFO 801680 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2025-11-14T23:10:56.441+01:00  INFO 801680 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-14T23:10:56.502+01:00  INFO 801680 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interface.
+2025-11-14T23:10:56.981+01:00  INFO 801680 --- [analyze-fx-deals] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-14T23:10:57.121+01:00  INFO 801680 --- [analyze-fx-deals] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-14T23:10:57.194+01:00  INFO 801680 --- [analyze-fx-deals] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-14T23:10:57.593+01:00  INFO 801680 --- [analyze-fx-deals] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-14T23:10:57.635+01:00  INFO 801680 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-14T23:10:57.987+01:00  INFO 801680 --- [analyze-fx-deals] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4dafea3f
+2025-11-14T23:10:57.990+01:00  INFO 801680 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-14T23:10:58.042+01:00  WARN 801680 --- [analyze-fx-deals] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-14T23:10:58.075+01:00  INFO 801680 --- [analyze-fx-deals] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-14T23:10:59.226+01:00  INFO 801680 --- [analyze-fx-deals] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-14T23:10:59.317+01:00  INFO 801680 --- [analyze-fx-deals] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T23:10:59.747+01:00  WARN 801680 --- [analyze-fx-deals] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-14T23:11:00.249+01:00  INFO 801680 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Started AnalyzeFxDealsApplicationTests in 5.105 seconds (process running for 7.144)
+2025-11-14T23:11:00.667+01:00  INFO 801680 --- [analyze-fx-deals] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T23:11:00.670+01:00  INFO 801680 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-14T23:11:00.691+01:00  INFO 801680 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-14T23:11:35.572+01:00  INFO 802512 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Starting AnalyzeFxDealsApplicationTests using Java 17.0.13 with PID 802512 (started by happy in /home/happy/Bureau/progressSoft/analyze-fx-deals)
+2025-11-14T23:11:35.574+01:00 DEBUG 802512 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14T23:11:35.575+01:00  INFO 802512 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2025-11-14T23:11:36.545+01:00  INFO 802512 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-14T23:11:36.640+01:00  INFO 802512 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 1 JPA repository interface.
+2025-11-14T23:11:37.149+01:00  INFO 802512 --- [analyze-fx-deals] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-14T23:11:37.230+01:00  INFO 802512 --- [analyze-fx-deals] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-14T23:11:37.281+01:00  INFO 802512 --- [analyze-fx-deals] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-14T23:11:37.657+01:00  INFO 802512 --- [analyze-fx-deals] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-14T23:11:37.696+01:00  INFO 802512 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-14T23:11:38.087+01:00  INFO 802512 --- [analyze-fx-deals] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4dafea3f
+2025-11-14T23:11:38.089+01:00  INFO 802512 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-14T23:11:38.138+01:00  WARN 802512 --- [analyze-fx-deals] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-14T23:11:38.164+01:00  INFO 802512 --- [analyze-fx-deals] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-14T23:11:39.416+01:00  INFO 802512 --- [analyze-fx-deals] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-14T23:11:39.463+01:00  INFO 802512 --- [analyze-fx-deals] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T23:11:39.914+01:00  WARN 802512 --- [analyze-fx-deals] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-14T23:11:40.395+01:00  INFO 802512 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Started AnalyzeFxDealsApplicationTests in 5.258 seconds (process running for 7.234)
+2025-11-14T23:11:40.799+01:00  INFO 802512 --- [analyze-fx-deals] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T23:11:40.802+01:00  INFO 802512 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-14T23:11:40.827+01:00  INFO 802512 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-14T23:28:26.643+01:00  INFO 822760 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Starting AnalyzeFxDealsApplicationTests using Java 17.0.13 with PID 822760 (started by happy in /home/happy/Bureau/progressSoft/analyze-fx-deals)
+2025-11-14T23:28:26.645+01:00 DEBUG 822760 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14T23:28:26.646+01:00  INFO 822760 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2025-11-14T23:28:27.638+01:00  INFO 822760 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-14T23:28:27.715+01:00  INFO 822760 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 1 JPA repository interface.
+2025-11-14T23:28:28.211+01:00  INFO 822760 --- [analyze-fx-deals] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-14T23:28:28.302+01:00  INFO 822760 --- [analyze-fx-deals] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-14T23:28:28.362+01:00  INFO 822760 --- [analyze-fx-deals] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-14T23:28:28.547+01:00  INFO 822760 --- [analyze-fx-deals] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-14T23:28:28.608+01:00  INFO 822760 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-14T23:28:29.033+01:00  INFO 822760 --- [analyze-fx-deals] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@60b33bc
+2025-11-14T23:28:29.035+01:00  INFO 822760 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-14T23:28:29.102+01:00  WARN 822760 --- [analyze-fx-deals] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-14T23:28:29.133+01:00  INFO 822760 --- [analyze-fx-deals] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-14T23:28:30.187+01:00  INFO 822760 --- [analyze-fx-deals] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-14T23:28:30.256+01:00  INFO 822760 --- [analyze-fx-deals] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T23:28:30.779+01:00  WARN 822760 --- [analyze-fx-deals] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-14T23:28:31.245+01:00  INFO 822760 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Started AnalyzeFxDealsApplicationTests in 5.104 seconds (process running for 9.042)
+2025-11-14T23:28:31.296+01:00  INFO 822760 --- [analyze-fx-deals] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T23:28:31.299+01:00  INFO 822760 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-14T23:28:31.331+01:00  INFO 822760 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-14T23:29:10.336+01:00  INFO 823868 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Starting AnalyzeFxDealsApplicationTests using Java 17.0.13 with PID 823868 (started by happy in /home/happy/Bureau/progressSoft/analyze-fx-deals)
+2025-11-14T23:29:10.338+01:00 DEBUG 823868 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14T23:29:10.339+01:00  INFO 823868 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2025-11-14T23:29:11.238+01:00  INFO 823868 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-14T23:29:11.313+01:00  INFO 823868 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interface.
+2025-11-14T23:29:11.794+01:00  INFO 823868 --- [analyze-fx-deals] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-14T23:29:11.861+01:00  INFO 823868 --- [analyze-fx-deals] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-14T23:29:11.924+01:00  INFO 823868 --- [analyze-fx-deals] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-14T23:29:12.137+01:00  INFO 823868 --- [analyze-fx-deals] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-14T23:29:12.196+01:00  INFO 823868 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-14T23:29:12.629+01:00  INFO 823868 --- [analyze-fx-deals] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@61207d28
+2025-11-14T23:29:12.631+01:00  INFO 823868 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-14T23:29:12.693+01:00  WARN 823868 --- [analyze-fx-deals] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-14T23:29:12.734+01:00  INFO 823868 --- [analyze-fx-deals] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-14T23:29:13.879+01:00  INFO 823868 --- [analyze-fx-deals] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-14T23:29:13.952+01:00  INFO 823868 --- [analyze-fx-deals] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T23:29:14.473+01:00  WARN 823868 --- [analyze-fx-deals] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-14T23:29:15.006+01:00  INFO 823868 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Started AnalyzeFxDealsApplicationTests in 5.167 seconds (process running for 8.99)
+2025-11-14T23:29:15.097+01:00  INFO 823868 --- [analyze-fx-deals] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T23:29:15.101+01:00  INFO 823868 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-14T23:29:15.148+01:00  INFO 823868 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-14T23:36:49.204+01:00  INFO 832852 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Starting AnalyzeFxDealsApplicationTests using Java 17.0.13 with PID 832852 (started by happy in /home/happy/Bureau/progressSoft/analyze-fx-deals)
+2025-11-14T23:36:49.206+01:00 DEBUG 832852 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14T23:36:49.207+01:00  INFO 832852 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2025-11-14T23:36:50.200+01:00  INFO 832852 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-14T23:36:50.322+01:00  INFO 832852 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 98 ms. Found 1 JPA repository interface.
+2025-11-14T23:36:50.969+01:00  INFO 832852 --- [analyze-fx-deals] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-14T23:36:51.061+01:00  INFO 832852 --- [analyze-fx-deals] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-14T23:36:51.125+01:00  INFO 832852 --- [analyze-fx-deals] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-14T23:36:51.336+01:00  INFO 832852 --- [analyze-fx-deals] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-14T23:36:51.405+01:00  INFO 832852 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-14T23:36:51.868+01:00  INFO 832852 --- [analyze-fx-deals] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@32a2da8c
+2025-11-14T23:36:51.870+01:00  INFO 832852 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-14T23:36:51.933+01:00  WARN 832852 --- [analyze-fx-deals] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-14T23:36:51.983+01:00  INFO 832852 --- [analyze-fx-deals] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-14T23:36:53.250+01:00  INFO 832852 --- [analyze-fx-deals] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-14T23:36:53.328+01:00  INFO 832852 --- [analyze-fx-deals] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T23:36:53.878+01:00  WARN 832852 --- [analyze-fx-deals] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-14T23:36:54.451+01:00  INFO 832852 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Started AnalyzeFxDealsApplicationTests in 5.711 seconds (process running for 9.709)
+2025-11-14T23:36:54.585+01:00  INFO 832852 --- [analyze-fx-deals] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T23:36:54.588+01:00  INFO 832852 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-14T23:36:54.616+01:00  INFO 832852 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-14T23:38:39.317+01:00  INFO 835066 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Starting AnalyzeFxDealsApplicationTests using Java 17.0.13 with PID 835066 (started by happy in /home/happy/Bureau/progressSoft/analyze-fx-deals)
+2025-11-14T23:38:39.319+01:00 DEBUG 835066 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14T23:38:39.320+01:00  INFO 835066 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2025-11-14T23:38:40.206+01:00  INFO 835066 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-14T23:38:40.290+01:00  INFO 835066 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 1 JPA repository interface.
+2025-11-14T23:38:40.809+01:00  INFO 835066 --- [analyze-fx-deals] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-14T23:38:40.887+01:00  INFO 835066 --- [analyze-fx-deals] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-14T23:38:40.938+01:00  INFO 835066 --- [analyze-fx-deals] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-14T23:38:41.176+01:00  INFO 835066 --- [analyze-fx-deals] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-14T23:38:41.218+01:00  INFO 835066 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-14T23:38:41.748+01:00  INFO 835066 --- [analyze-fx-deals] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4033d25d
+2025-11-14T23:38:41.750+01:00  INFO 835066 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-14T23:38:41.811+01:00  WARN 835066 --- [analyze-fx-deals] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-14T23:38:41.842+01:00  INFO 835066 --- [analyze-fx-deals] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-14T23:38:42.900+01:00  INFO 835066 --- [analyze-fx-deals] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-14T23:38:42.967+01:00  INFO 835066 --- [analyze-fx-deals] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T23:38:43.626+01:00  WARN 835066 --- [analyze-fx-deals] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-14T23:38:44.108+01:00  INFO 835066 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Started AnalyzeFxDealsApplicationTests in 5.265 seconds (process running for 9.368)
+2025-11-14T23:38:44.253+01:00  INFO 835066 --- [analyze-fx-deals] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T23:38:44.256+01:00  INFO 835066 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-14T23:38:44.284+01:00  INFO 835066 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-14T23:40:17.018+01:00  INFO 837277 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Starting AnalyzeFxDealsApplicationTests using Java 17.0.13 with PID 837277 (started by happy in /home/happy/Bureau/progressSoft/analyze-fx-deals)
+2025-11-14T23:40:17.019+01:00 DEBUG 837277 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-14T23:40:17.021+01:00  INFO 837277 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2025-11-14T23:40:18.213+01:00  INFO 837277 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-14T23:40:18.306+01:00  INFO 837277 --- [analyze-fx-deals] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 1 JPA repository interface.
+2025-11-14T23:40:18.850+01:00  INFO 837277 --- [analyze-fx-deals] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-14T23:40:18.931+01:00  INFO 837277 --- [analyze-fx-deals] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-14T23:40:18.983+01:00  INFO 837277 --- [analyze-fx-deals] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-14T23:40:19.244+01:00  INFO 837277 --- [analyze-fx-deals] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-14T23:40:19.304+01:00  INFO 837277 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-14T23:40:19.750+01:00  INFO 837277 --- [analyze-fx-deals] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@cbb32f0
+2025-11-14T23:40:19.753+01:00  INFO 837277 --- [analyze-fx-deals] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-14T23:40:19.825+01:00  WARN 837277 --- [analyze-fx-deals] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-14T23:40:19.863+01:00  INFO 837277 --- [analyze-fx-deals] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-14T23:40:21.109+01:00  INFO 837277 --- [analyze-fx-deals] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-14T23:40:21.172+01:00  INFO 837277 --- [analyze-fx-deals] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T23:40:21.686+01:00  WARN 837277 --- [analyze-fx-deals] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-14T23:40:22.226+01:00  INFO 837277 --- [analyze-fx-deals] [main] c.p.a.AnalyzeFxDealsApplicationTests     : Started AnalyzeFxDealsApplicationTests in 5.665 seconds (process running for 9.619)
+2025-11-14T23:40:22.348+01:00  INFO 837277 --- [analyze-fx-deals] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-14T23:40:22.350+01:00  INFO 837277 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-14T23:40:22.370+01:00  INFO 837277 --- [analyze-fx-deals] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
