@@ -64,6 +64,11 @@
     		<version>1.18.30</version>
     		<scope>provided</scope>
 		</dependency>
+		<dependency>
+    		<groupId>org.mapstruct</groupId>
+    		<artifactId>mapstruct</artifactId>
+    		<version>1.6.3</version> 
+		</dependency>
 
 	</dependencies>
 
@@ -92,6 +97,20 @@
 						</exclude>
 					</excludes>
 				</configuration>
+			</plugin>
+			<plugin>
+    			<groupId>org.apache.maven.plugins</groupId>
+    			<artifactId>maven-compiler-plugin</artifactId>
+    			<version>3.13.0</version>
+    			<configuration>
+    			    <annotationProcessorPaths>
+    			        <path>
+    			            <groupId>org.mapstruct</groupId>
+    			            <artifactId>mapstruct-processor</artifactId>
+    			            <version>1.6.3</version>
+    			        </path>
+    			    </annotationProcessorPaths>
+    			</configuration>
 			</plugin>
 		</plugins>
 	</build>

@@ -18,14 +18,19 @@ import com.progresssoft.analyze_fx_deals.model.Deal;
 import com.progresssoft.analyze_fx_deals.service.DealService;
 
 @RestController
-@RequestMapping("/api/v1.0.0/deals")
+@RequestMapping("/api/v1 /deals")
 public class DealController {
+
+    @GetMapping("/hi")
+    public String hi() {
+        return "hi";
+    }
     
     @Autowired
     private DealService dealService;
 
     @PostMapping("/import")
-    public ResponseEntity<String> importDealsFile(@RequestParam("file") MultipartFile file) {
+    public ResponseEntity<String> importDealsFile(@RequestParam("file") MultipartFile file) throws Exception{
         dealService.importDeals(file);
         return ResponseEntity.ok("create with success");
     }

@@ -4,14 +4,14 @@ import java.util.List;
 
 import org.springframework.web.multipart.MultipartFile;
 
-import com.progresssoft.analyze_fx_deals.dto.ResponseDTO;
+import com.progresssoft.analyze_fx_deals.dto.RequestDTO;
 import com.progresssoft.analyze_fx_deals.model.Deal;
 
 public interface DealService {
 
-    abstract void importDeals(MultipartFile file);
+    abstract List<RequestDTO> importDeals(MultipartFile file) throws Exception;
 
-    abstract void saveDral(Deal d);
+    abstract void saveDeal(Deal d);
 
     abstract List<Deal> getAllDeals();
 
