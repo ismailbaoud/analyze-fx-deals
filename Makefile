@@ -1,5 +1,3 @@
-.PHONY: help build start stop restart logs test clean deploy import-sample health db-connect coverage
-
 # Default target
 .DEFAULT_GOAL := help
 
