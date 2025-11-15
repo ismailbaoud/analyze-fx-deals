@@ -15,7 +15,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.progresssoft.analyze_fx_deals.dto.RequestDTO;
-import com.progresssoft.analyze_fx_deals.mapper.DealMapper;
 import com.progresssoft.analyze_fx_deals.model.Deal;
 import com.progresssoft.analyze_fx_deals.repository.DealRepository;
 import jakarta.validation.*;
@@ -28,9 +27,6 @@ public class DealServiceImpl implements DealService {
 
     @Autowired
     private DealRepository dealRepository;
-
-    @Autowired
-    private DealMapper mapper;
 
     @Autowired
     private Validator validator;
@@ -53,7 +49,7 @@ public class DealServiceImpl implements DealService {
 
             String[] fields = line.split(",");
             if(fields.length != 5) {
-                throw new IllegalArgumentException("Invalide row format");
+                throw new IllegalArgumentException("Invalid row format");
             }
 
             RequestDTO rDto = new RequestDTO();
@@ -63,29 +59,37 @@ public class DealServiceImpl implements DealService {
             rDto.setDealTimestamp(LocalDateTime.parse(fields[3]));
             rDto.setDealAmount(new BigDecimal(fields[4]));
 
-            Deal deal = mapper.toEntity(rDto);
-
             Set<ConstraintViolation<RequestDTO>> violations = validator.validate(rDto);
             if (!violations.isEmpty()) {
                 String errorMsg = violations.stream()
                                             .map(ConstraintViolation::getMessage)
                                             .collect(Collectors.joining(", "));
-                String msg = "Error in Deal with id : " +rDto.getDealUniqueId() + " " + errorMsg;
-                log.warn(msg, rDto);
+                String msg = "Error in Deal with id : " + rDto.getDealUniqueId() + " " + errorMsg;
+                log.warn(msg);
                 continue;
             }
 
             if (dealRepository.existsByDealUniqueId(rDto.getDealUniqueId())) {
-                String msg = "Deal with id " +  deal.getDealUniqueId() + " is already exist";
-                log.warn(msg, rDto);
+                String msg = "Deal with id " + rDto.getDealUniqueId() + " already exists";
+                log.warn(msg);
                 continue;
             }
 
+            // Manual mapping instead of mapper
+            Deal deal = new Deal();
+            deal.setDealUniqueId(rDto.getDealUniqueId());
+            deal.setFromCurrencyIsoCode(rDto.getFromCurrencyIsoCode());
+            deal.setToCurrencyIsoCode(rDto.getToCurrencyIsoCode());
+            deal.setDealTimestamp(rDto.getDealTimestamp());
+            deal.setDealAmount(rDto.getDealAmount());
+
             saveDeal(deal);
-            String msg = "Deal with id : " + deal.getDealUniqueId() + " is created successfully";
-            log.info(msg , deal);
+            String msg = "Deal with id : " + deal.getDealUniqueId() + " created successfully";
+            log.info(msg);
             deals.add(deal);
         }
+        
+        bReader.close();
         return deals;
     }
 
